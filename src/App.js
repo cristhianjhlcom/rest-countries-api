@@ -1,49 +1,26 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import CountriesContainer from "./components/CountriesContainer";
+import React from "react";
+import GlobalStyle from "GlobalStyles";
 
-import styled from "styled-components";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-const Container = styled.div`
-  width: 70%;
-  max-width: 1440px;
-  margin: 3.125rem auto;
-
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-
-  @media screen and (min-width: 600px) {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 6.25rem;
-    row-gap: 3.125rem;
-  }
-
-  @media screen and (min-width: 960px) {
-    width: 90%;
-    grid-template-columns: repeat(4, 1fr);
-  }
-`;
+import Navbar from "components/Navbar";
+import { Home } from "pages/Home";
+import { Country } from "pages/Country";
 
 function App() {
-  const [countries, setCountries] = useState([]);
-
-  const countriesAPI = async () => {
-    const request = await fetch("https://restcountries.eu/rest/v2/all");
-    const response = await request.json();
-    setCountries(response);
-  };
-
-  useEffect(() => {
-    countriesAPI();
-  }, []);
-
   return (
-    <>
+    <Router>
       <Navbar />
-      <Container>
-        <CountriesContainer countries={countries} />
-      </Container>
-    </>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/:id">
+          <Country />
+        </Route>
+      </Switch>
+      <GlobalStyle />
+    </Router>
   );
 }
 
