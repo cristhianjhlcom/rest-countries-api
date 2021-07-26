@@ -1,7 +1,7 @@
 # REST Countries API with color theme switcher
 
 > The challenge is to integrate with the [REST Countries API](https://restcountries.eu) to pull country data and display it like in the designs.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> Live demo [_here_](https://rest-countries-reactjs.netlify.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of contents
 * [General Info](#general-information)
