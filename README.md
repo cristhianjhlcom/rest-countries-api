@@ -1,6 +1,6 @@
 # REST Countries API with color theme switcher
 
-> Your challenge is to integrate with the [REST Countries API](https://restcountries.eu) to pull country data and display it like in the designs.
+> The challenge is to integrate with the [REST Countries API](https://restcountries.eu) to pull country data and display it like in the designs.
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Hello There 👋
@@ -13,36 +13,26 @@
 * [Setup](#setup)
 * [Usage](#usage)
 * [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 <!-- * [License](#license) -->
 
 ## General info
-- See all countries from the API on the homepage
-- Search for a country using an `input` field
-- Filter countries by region
-- Click on a country to see more detailed information on a separate page
-- Click through to the border countries on the detail page
-- Toggle the color scheme between light and dark mode *(optional)*
+This app show a list of countries and give you a tons of information about the country.
 
-- This app show a list of countries and give you a tons of information about the country.
 - What problem does it (intend to) solve?
-Improve my developer skills
+**Improve my developer skills**
 - What is the purpose of the project?
-I want to practice more about ReactJS
+**I want to practice more about ReactJS**
 - Why did i undertake it?
-It's important to a developer to practice constantly
+**It's important to a developer to practice constantly**
 	
 ## Technologies Used
-Project is created with:
 * React.js Version: 16.13.1
 * React Router DOM version: 5.2.0
-* styled-components version: 5.2.0
+* Styled Components version: 5.2.0
 	
 ## Features
-List the ready features here:
-
 - See all countries from the API on the homepage ✅
 - Search for a country using an `input` field ✅
 - Filter countries by region ✅
@@ -59,9 +49,8 @@ Project is: _in progress_
 <!-- Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why. -->
 
 ## Acknowledgements
-Give credit here.
 - This project was inspired by [Frontend Mentor](https://www.frontendmentor.io) that allow you to improve your skills in a real-life workflow.
 - This project was based on [REST Countries API with color theme switcher](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
 
 ## Contact
-Created by cristhianjhl.com(https://cristhianjhl.com/) - feel free to contact me!
+Created by [Cristhian Hernández](https://cristhianjhl.com/) - feel free to contact me!
