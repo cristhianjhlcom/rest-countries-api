@@ -1,4 +1,5 @@
 import React from 'react';
+import { numberWithCommas } from "helpers/formatNumbers";
 import { CardCountry, CardContent, CardThumbnail, CardLink } from "components/Card/Card.styles";
 
 function Card({ country }) {
@@ -12,7 +13,7 @@ function Card({ country }) {
         </CardThumbnail>
         <CardContent>
           <h4>{name}</h4>
-          <p><strong>Population:</strong> {population}</p>
+          <p><strong>Population:</strong> {numberWithCommas(population)}</p>
           <p><strong>Region:</strong> {region}</p>
           <p><strong>Capital:</strong> {capital}</p>
         </CardContent>

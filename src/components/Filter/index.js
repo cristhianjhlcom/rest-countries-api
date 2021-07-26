@@ -1,14 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { FilterContainer, FilterInput } from "components/Filter/Filter.styles";
 
-function Filter() {
+function Filter({ setQuery }) {
   return (
-    <div>
-      <input 
-          type="text" 
-          placeholder="Search for a country..." 
-        />
-    </div>
+    <FilterContainer>
+      <i className="fas fa-search"></i>
+      <FilterInput
+        type="text" 
+        placeholder="Search for a country..."
+        onChange={(e) => setQuery(e.target.value)}
+      />
+    </FilterContainer>
   )
 }
 
-export default Filter
+export default Filter;

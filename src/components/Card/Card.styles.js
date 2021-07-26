@@ -19,10 +19,12 @@ export const CardContent = styled.div`
 
   h4 {
     margin: 0 0 1.25rem 0;
+    line-height: 1.8;
   }
 
   p {
     margin: 0 0 0.625rem 0;
+    line-height: 2;
     strong {
       font-weight: var(--FontWeightBold);
     }
