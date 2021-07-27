@@ -39,7 +39,7 @@ This app show a list of countries and give you a tons of information about the c
 - Toggle the color scheme between light and dark mode ✅
 
 ## Screenshots
-![Design preview for the REST Countries API with color theme switcher coding challenge](./resources/design/desktop-preview.jpg)
+![Design preview for the REST Countries API with color theme switcher coding challenge](https://media.giphy.com/media/ljV3cWwcPXbcSjpPOd/giphy.gif)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Project Status
