@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  background-color: var(--White);
+  background-color: var(--bgColor);
+  color: var(--textColor);
   padding: 1.25rem 0;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
 `;
@@ -9,11 +10,12 @@ export const Nav = styled.nav`
 export const Title = styled.h1`
   font-size: calc(1.25rem, 1.5rem, 1.75rem);
   font-weight: var(--FontWeightDark);
-  color: var(--VeryDarkBlueTxt);
+  color: var(--textColor);
 `;
 
 export const DarkModeBtn = styled.button`
-  background-color: var(--White);
+  background-color: var(--bgColor);
+  color: var(--textColor);
   padding: 1.25rem;
   border-radius: 0.3125rem;
   border: none;
@@ -27,7 +29,7 @@ export const DarkModeBtn = styled.button`
 
   &:hover,
   &:focus {
-    background-color: var(--VeryLightGray);
+    background-color: var(--bgHoverColor);
   }
 
   &:focus {

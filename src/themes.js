@@ -1,9 +1,32 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export const lightTheme = {
+    body: "hsl(0, 0%, 98%)",
+    fontColor: "hsl(200, 15%, 8%)",
+    bgColor: "hsl(0, 0%, 100%)",
+    bgHoverColor: "hsl(0, 0%, 98%)",
+    textColor: "hsl(200, 15%, 8%)",
+};
+
+export const darkTheme = {
+    body: "hsl(207, 26%, 17%)",
+    fontColor: "hsl(0, 0%, 100%)",
+    bgColor: "hsl(209, 23%, 22%)",
+    bgHoverColor: "hsl(207, 26%, 17%)",
+    textColor: "hsl(0, 0%, 100%)",
+};
+
+
+export const GlobalStyle = createGlobalStyle`
   :root {
     --mobileDevice: 375px;
     --desktopDevice: 1440px;
+
+    --bgColor: ${props => props.theme.bgColor};
+    --bgHoverColor: ${props => props.theme.bgHoverColor};
+    --textColor: ${props => props.theme.textColor};
+
+    --rounded: 0.3125rem;
 
     --DarkBlue: hsl(209, 23%, 22%);
     --VeryDarkBlueBg: hsl(207, 26%, 17%);
@@ -33,12 +56,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    margin: 0;
+    background-color: ${props => props.theme.body};
     font-family: var(--FontFamily);
     font-weight: var(--FontWeightNormal);
     color: var(--VeryDarkBlueTxt);
     line-height: 1;
-    background-color: var(--VeryLightGray);
   }
 
   code {
@@ -55,5 +77,3 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1;
   }
 `;
-
-export default GlobalStyle;

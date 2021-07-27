@@ -21,6 +21,11 @@ export const Content = styled.div`
   width: 70%;
   margin: 0 auto;
 
+  p {
+    color: var(--textColor);
+    font-weight: 700;
+  }
+
   @media screen and (min-width: 660px) {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);

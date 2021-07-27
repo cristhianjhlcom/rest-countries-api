@@ -3,18 +3,24 @@ import { Link } from "react-router-dom";
 
 export const CardLink = styled(Link)`
   text-decoration: none;
-  color: #111;
+  color: var(--textColor);
+  border-radius: var(--rounded);
+  overflow: hidden;
+  &:focus {
+    border: 2px solid var(--textColor);
+  }
 `;
 
 export const CardCountry = styled.article`
-  border-radius: 0.3125rem;
+  border-radius: var(--rounded);
   overflow: hidden;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
 `;
 
 export const CardContent = styled.div`
   padding: 2.5rem;
-  background-color: var(--White);
+  background-color: var(--bgColor);
+  color: var(--textColor);
   margin-top: auto;
 
   h4 {
