@@ -28,13 +28,6 @@ export const GlobalStyle = createGlobalStyle`
 
     --rounded: 0.3125rem;
 
-    --DarkBlue: hsl(209, 23%, 22%);
-    --VeryDarkBlueBg: hsl(207, 26%, 17%);
-    --VeryDarkBlueTxt: hsl(200, 15%, 8%);
-    --DarkGray: hsl(0, 0%, 52%);
-    --VeryLightGray: hsl(0, 0%, 98%);
-    --White: hsl(0, 0%, 100%);
-
     --HomepageItems: 14px;
     --DetailPage: 16px;
 
@@ -57,9 +50,9 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: ${props => props.theme.body};
+    color: ${props => props.theme.textColor};
     font-family: var(--FontFamily);
     font-weight: var(--FontWeightNormal);
-    color: var(--VeryDarkBlueTxt);
     line-height: 1;
   }
 

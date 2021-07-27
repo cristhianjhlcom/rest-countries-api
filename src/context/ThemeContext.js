@@ -3,7 +3,7 @@ import React, { useState, useEffect, createContext } from 'react';
 const Context = createContext({});
 
 export function ThemeContextProvider({ children }) {
-    const [theme, setTheme] = useState(() => window.sessionStorage.getItem("theme"));
+    const [theme, setTheme] = useState(() => window.sessionStorage.getItem("theme") || "light");
 
     const toggleTheme = () => {
         if(theme === "light") {
@@ -14,10 +14,6 @@ export function ThemeContextProvider({ children }) {
             window.sessionStorage.setItem("theme", "light");
         }
     }
-
-    useEffect(() => {
-        window.sessionStorage.setItem("theme", "light");
-    }, []);
 
     return (
         <Context.Provider value={{ theme, toggleTheme }}>{children}</Context.Provider>
